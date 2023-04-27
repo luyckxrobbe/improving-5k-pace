@@ -16,7 +16,7 @@ h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
   text-align: center;
-  padding: 30px 0px 15px;
+  padding: 0px 0px 15px;
 }
 
 hr {
@@ -61,6 +61,14 @@ td {
   user-select: none;
 }
 
+#arrow {
+  width: 50px
+}
+#arrow:hover {
+  transition: transform 500ms;
+  transform: scale(1.05);
+}
+
 @media only screen and (min-width: 768px) {
   .startToRunTable {
     font-size: large;
@@ -77,5 +85,8 @@ td {
 
   td:hover {
     background-color: #ededed;
+  }
+  #arrow {
+    width: 100px;
   }
 }
